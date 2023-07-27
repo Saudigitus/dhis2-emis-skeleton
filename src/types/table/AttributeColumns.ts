@@ -13,8 +13,9 @@ export interface CustomAttributeProps {
     required: string | boolean
     name: string
     labelName: string
+    description?: string
     valueType: typeof Attribute.valueType
-    options: { optionSet: [OptionSetProps] }
+    options?: { optionSet: [OptionSetProps] }
     visible: boolean
     disabled: boolean
     pattern?: string

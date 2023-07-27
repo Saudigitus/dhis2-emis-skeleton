@@ -18,5 +18,6 @@ import SimpleDropdownButton from "./buttons/MultipleButtons/SimpleDropdownButton
 import SwitchButtonView from "./buttons/MultipleButtons/SwitchButtonView";
 import ButtonsGroup from "./buttons/GroupedButtons/ButtonGroup";
 import TagAlert from "./alerts/EmbeddedAlert";
+import GroupForm from "./form/GroupForm";
 
-export { SideBar, MainHeader, DashboardCard, Table, DropdownButtonComponent, FlyoutMenuComponent, Buttons, WithPadding, WithBorder, ModalComponent, ModalContentComponent, OrgUnitTree, SimpleSearch, Title, Subtitle, SummaryCard, SimpleButton, SimpleDropdownButton, SwitchButtonView, ButtonsGroup, TagAlert}
+export { SideBar, MainHeader, DashboardCard, Table, DropdownButtonComponent, FlyoutMenuComponent, Buttons, WithPadding, WithBorder, ModalComponent, ModalContentComponent, OrgUnitTree, SimpleSearch, Title, Subtitle, SummaryCard, SimpleButton, SimpleDropdownButton, SwitchButtonView, ButtonsGroup, TagAlert, GroupForm}
