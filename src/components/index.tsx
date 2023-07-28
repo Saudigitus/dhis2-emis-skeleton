@@ -4,7 +4,7 @@ import Buttons from "./buttons/Button";
 import { OrgUnitTree } from "./orgUnitTree/index"
 import { SimpleSearch } from "./search/index"
 import DashboardCard from "./card/CardComponent";
-import DropdownButtonComponent from "./buttons/DropdownButton";
+import SplitButtonComponent from "./buttons/DropdownButton";
 import FlyoutMenuComponent from "./menu/FlyoutMenu";
 import WithPadding from "./template/WithPadding";
 import WithBorder from "./template/WithBorder";
@@ -20,4 +20,4 @@ import ButtonsGroup from "./buttons/GroupedButtons/ButtonGroup";
 import TagAlert from "./alerts/EmbeddedAlert";
 import GroupForm from "./form/GroupForm";
 
-export { SideBar, MainHeader, DashboardCard, Table, DropdownButtonComponent, FlyoutMenuComponent, Buttons, WithPadding, WithBorder, ModalComponent, ModalContentComponent, OrgUnitTree, SimpleSearch, Title, Subtitle, SummaryCard, SimpleButton, SimpleDropdownButton, SwitchButtonView, ButtonsGroup, TagAlert, GroupForm}
+export { SideBar, MainHeader, DashboardCard, Table, SplitButtonComponent, FlyoutMenuComponent, Buttons, WithPadding, WithBorder, ModalComponent, ModalContentComponent, OrgUnitTree, SimpleSearch, Title, Subtitle, SummaryCard, SimpleButton, SimpleDropdownButton, SwitchButtonView, ButtonsGroup, TagAlert, GroupForm }
