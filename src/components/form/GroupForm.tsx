@@ -17,7 +17,7 @@ function GroupForm(props: FormProps) {
 
     return (
         <WithBorder type={"all"}>
-            <WithPadding p={"16px 5px 16px 5px"}>
+            <WithPadding p={"16px 5px 0px 5px"}>
                 <span className={style.textTitlle}>
                     {name}
                 </span>
