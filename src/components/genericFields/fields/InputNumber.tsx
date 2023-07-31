@@ -8,14 +8,8 @@ import {
 } from '@dhis2/ui'
 import React from 'react'
 import style from "./fields.module.css";
-// eslint-disable-next-line import/extensions
 import { formatToString } from './formatters'
-
-interface NumberFieldProps {
-    disabled: boolean
-    required: string | boolean
-    type: string
-}
+import { type GenericFieldsProps } from '../../../types/fields/GenericFieldsTypes';
 
 const { Field } = ReactFinalForm
 
@@ -29,7 +23,7 @@ const VALIDATOR = composeValidators(
     createNumberRange(lowerbound, upperbound)
 )
 
-function InputNumber(props: NumberFieldProps) {
+function InputNumber(props: GenericFieldsProps) {
     return (
         <Field
             {...props}

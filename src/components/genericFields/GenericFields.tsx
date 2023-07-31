@@ -60,21 +60,8 @@ function GenericFields({ attribute, disabled, valueType }: GenericFieldsProps) {
         />
       );
 
-/*     case "MULTI_SELECT":
-      return (
-        <SelectMultiple
-          {...attribute}
-          disabled={disabled}
-          // eslint-disable-next-line react/prop-types
-          placeholder={attribute.label}
-          onChange={(e) => { localChange(e.selected, index) }}
-          // eslint-disable-next-line react/prop-types
-          selected={attribute.value}
-        />
-      ); */
-
     case Attribute.valueType.LIST as unknown as CustomAttributeProps["valueType"]:
-      return <SingleSelectField {...attribute} disabled={disabled} />;
+      return <SingleSelectField {...attribute} optionSet={attribute.options} disabled={disabled} />;
 
     default:
       return <span>Campo não mapeado</span>;

@@ -7,16 +7,13 @@ import {
 } from '@dhis2/ui'
 import React from 'react'
 import style from "./fields.module.css";
+import { type GenericFieldsProps } from '../../../types/fields/GenericFieldsTypes';
 
-interface TextFieldProps {
-    disabled: boolean
-    required: string | boolean
-}
 const { Field } = ReactFinalForm
 
 const VALIDATOR = composeValidators(string, hasValue)
 
-function InputText(props: TextFieldProps) {
+function InputText(props: GenericFieldsProps) {
     return (
         <Field
             {...props}

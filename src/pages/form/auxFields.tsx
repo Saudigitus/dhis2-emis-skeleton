@@ -75,6 +75,19 @@ export const fieldsData: CustomAttributeProps[] = [
     visible: true
   },
   {
+    id: "gender",
+    labelName: "Gender",
+    displayName: "Gender",
+    header: "Gender",
+    disabled: false,
+    valueType: Attribute.valueType
+      .LIST as unknown as CustomAttributeProps["valueType"],
+    options: { optionSet: [{ value: 'F', label: 'Female' }, { value: 'M', label: 'Male' }] },
+    name: "gender",
+    required: false,
+    visible: true
+  },
+  {
     id: "check",
     labelName: "Check",
     displayName: "Check",

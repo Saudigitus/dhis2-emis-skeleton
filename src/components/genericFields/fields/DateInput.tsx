@@ -1,13 +1,10 @@
 import { ReactFinalForm, InputFieldFF, hasValue } from "@dhis2/ui";
 import React from "react";
+import { type GenericFieldsProps } from "../../../types/fields/GenericFieldsTypes";
 
-interface DateFieldProps {
-  disabled: boolean
-  required: string | boolean
-}
 const { Field } = ReactFinalForm;
 
-function DateInput(props: DateFieldProps) {
+function DateInput(props: GenericFieldsProps) {
   return (
     <Field
       {...props}
