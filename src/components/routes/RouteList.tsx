@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 import React from "react";
-import { SideBarLayout, SimpleLayout, FullLayout } from "../../layout"
+import { SideBarLayout, SimpleLayout } from "../../layout"
 import { Cards, ButtonsPage, Home, Modal, Titles, TagAlerts} from "../../pages";
 import TableComponent from "../../pages/table/Table";
 
@@ -18,7 +18,7 @@ export default function RouteList() {
         },
         {
             path: "/table",
-            layout: FullLayout,
+            layout: SideBarLayout,
             component: () => <TableComponent />
         },
         {

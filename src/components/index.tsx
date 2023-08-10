@@ -1,5 +1,5 @@
 import Table from "./table/render/Table"
-import { SideBar, MainHeader } from "./layout/index"
+import { SideBar } from "./layout/index"
 import Buttons from "./buttons/Button";
 import { OrgUnitTree } from "./orgUnitTree/index"
 import { SimpleSearch } from "./search/index"
@@ -19,4 +19,4 @@ import SwitchButtonView from "./buttons/MultipleButtons/SwitchButtonView";
 import ButtonsGroup from "./buttons/GroupedButtons/ButtonGroup";
 import TagAlert from "./alerts/EmbeddedAlert";
 
-export { SideBar, MainHeader, DashboardCard, Table, SplitButtonComponent, FlyoutMenuComponent, Buttons, WithPadding, WithBorder, ModalComponent, ModalContentComponent, OrgUnitTree, SimpleSearch, Title, Subtitle, SummaryCard, SimpleButton, SimpleDropdownButton, SwitchButtonView, ButtonsGroup, TagAlert}
+export { SideBar, DashboardCard, Table, SplitButtonComponent, FlyoutMenuComponent, Buttons, WithPadding, WithBorder, ModalComponent, ModalContentComponent, OrgUnitTree, SimpleSearch, Title, Subtitle, SummaryCard, SimpleButton, SimpleDropdownButton, SwitchButtonView, ButtonsGroup, TagAlert}

@@ -1,53 +1,88 @@
+import settings from "../../../assets/images/sidebar/settings.svg"
 import gauge from "../../../assets/images/sidebar/gauge.svg"
 import fileDocument from "../../../assets/images/sidebar/file-document.svg"
+import appsLoggOut from "../../../assets/images/sidebar/apps-loggOut.svg"
 import glyph from "../../../assets/images/sidebar/Glyph.svg"
 import listAdd from "../../../assets/images/sidebar/listAdd.svg"
-import logOut from "../../../assets/images/sidebar/log-out.svg"
 import { type SideBarItemProps } from "../../../types/sideBar/SideBarTypes"
 
-function sideBarData (): SideBarItemProps[] {
+function sideBarData(): SideBarItemProps[] {
     return [
         {
-            title: "Components",
+            title: "Students",
             subItems: [
                 {
-                    icon: listAdd,
-                    label: "Cards",
+                    icon: settings,
+                    label: "Program",
                     showBadge: false,
-                    route: "/cards"
+                    route: "/home4"
+                },
+                {
+                    icon: listAdd,
+                    label: "Enrollment",
+                    showBadge: false,
+                    route: "/enrollment"
+                },
+                {
+                    icon: fileDocument,
+                    label: "Socio - economics",
+                    showBadge: false,
+                    route: "/home3"
                 },
                 {
                     icon: glyph,
-                    label: "Buttons",
+                    label: "Attendance",
                     showBadge: false,
-                    route: "/buttons"
+                    route: "/home1"
                 },
                 {
                     icon: gauge,
-                    label: "Modal",
+                    label: "Performance",
                     showBadge: false,
-                    route: "/modal"
+                    route: "/home2"
+                }
+            ]
+        },
+        {
+            title: "Staff",
+            subItems: [
+                {
+                    icon: settings,
+                    label: "Program",
+                    showBadge: false,
+                    route: "/home4"
                 },
                 {
-                    icon: logOut,
-                    label: "Table",
+                    icon: listAdd,
+                    label: "Enrollment",
                     showBadge: false,
-                    route: "/table"
+                    route: "/enrollment"
                 },
                 {
-                    icon: fileDocument,
-                    label: "Tags",
+                    icon: glyph,
+                    label: "Attendance",
                     showBadge: false,
-                    route: "/tags"
+                    route: "/home7"
+                }
+            ]
+        },
+        {
+            title: "Overview",
+            subItems: [
+                {
+                    icon: appsLoggOut,
+                    label: "Apps Instalation",
+                    showBadge: false,
+                    route: "/home4"
                 },
                 {
-                    icon: fileDocument,
-                    label: "Titles",
+                    icon: appsLoggOut,
+                    label: "Modules Configuration",
                     showBadge: false,
-                    route: "/text"
+                    route: "/home4"
                 }
             ]
         }
     ]
 }
-export {sideBarData}
+export { sideBarData }
