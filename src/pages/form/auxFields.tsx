@@ -82,7 +82,15 @@ export const fieldsData: CustomAttributeProps[] = [
     disabled: false,
     valueType: Attribute.valueType
       .LIST as unknown as CustomAttributeProps["valueType"],
-    options: { optionSet: [{ value: 'F', label: 'Female' }, { value: 'M', label: 'Male' }] },
+    options: {
+      optionSet: {
+        id: "optionSetId",
+        options: [
+          {value: 'F', label: 'Female' },
+          { value: 'M', label: 'Male' }
+        ]
+      }
+    },
     name: "gender",
     required: false,
     visible: true

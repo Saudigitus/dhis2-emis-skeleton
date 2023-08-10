@@ -1,11 +1,6 @@
 import { type Attribute } from '../generated/models';
 import { type Access } from "../generated"
 
-interface OptionSetProps {
-    value: string
-    label: string
-}
-
 export interface CustomAttributeProps {
     id: string
     displayName: string
@@ -15,7 +10,15 @@ export interface CustomAttributeProps {
     labelName: string
     description?: string
     valueType: typeof Attribute.valueType
-    options?: { optionSet: OptionSetProps[] }
+    options?: {
+        optionSet: {
+            id: string
+            options: Array<{
+                value: string
+                label: string
+            }>
+        }
+    }
     visible: boolean
     disabled: boolean
     pattern?: string
