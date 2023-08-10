@@ -8,30 +8,30 @@ export default function RouteList() {
         {
             path: "/",
             layout: SimpleLayout,
-            component: () => <Navigate to="/student/program" replace />
+            component: () => <Navigate to="/students/program" replace />
         },
         {
-            path: "/student/program",
+            path: "/students/program",
             layout: SideBarLayout,
             component: StudentsProgram
         },
         {
-            path: "/student/enrollment",
+            path: "/students/enrollment",
             layout: SideBarLayout,
             component: StudentsEnrollment
         },
         {
-            path: "/student/socio-economics",
+            path: "/students/socio-economics",
             layout: SideBarLayout,
             component: StudentsSocioEconomics
         },
         {
-            path: "/student/attendance",
+            path: "/students/attendance",
             layout: SideBarLayout,
             component: StudentsAttendance
         },
         {
-            path: "/student/performance",
+            path: "/students/performance",
             layout: SideBarLayout,
             component: StudentsPerformance
         },

@@ -4,7 +4,7 @@ import { Title, WithPadding } from "../../components";
 function AppsInstallation(): React.ReactElement {
   return (
     <WithPadding>
-      <Title label="Apps Installation" />
+      <Title label="Apps Installation Status" />
     </WithPadding>
   );
 }

@@ -15,31 +15,31 @@ function sideBarData(): SideBarItemProps[] {
                     icon: settings,
                     label: "Program",
                     showBadge: false,
-                    route: "/student/program"
+                    route: "/students/program"
                 },
                 {
                     icon: listAdd,
                     label: "Enrollment",
                     showBadge: false,
-                    route: "/student/enrollment"
+                    route: "/students/enrollment"
                 },
                 {
                     icon: fileDocument,
                     label: "Socio - economics",
                     showBadge: false,
-                    route: "/student/socio-economics"
+                    route: "/students/socio-economics"
                 },
                 {
                     icon: glyph,
                     label: "Attendance",
                     showBadge: false,
-                    route: "/student/attendance"
+                    route: "/students/attendance"
                 },
                 {
                     icon: gauge,
                     label: "Performance",
                     showBadge: false,
-                    route: "/student/performance"
+                    route: "/students/performance"
                 }
             ]
         },

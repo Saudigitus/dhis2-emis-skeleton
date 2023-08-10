@@ -1,3 +1,3 @@
-import AppsConfiguration from "./AppsConfiguration";
+import AppsConfiguration from "./ModulesConfiguration";
 import AppsInstallation from "./AppsInstallation";
 export { AppsConfiguration, AppsInstallation}

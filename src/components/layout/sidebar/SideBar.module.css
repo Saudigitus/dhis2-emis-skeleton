@@ -181,7 +181,7 @@
 
 .ExpandCollapseSideBar {
     position: absolute;
-    top: 52px;
+    top: 2px;
     z-index: 1;
     right: -25px;
     cursor: pointer;

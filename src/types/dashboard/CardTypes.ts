@@ -6,9 +6,9 @@ interface DashboardCardProps {
 interface CardSubItemProps {
     icon: string
     title: string
-    leftLabel: string
+    timeLabel: string
     program: string
-    formLink: string
-    listLink: string
+    configRoute: string
+    status: string
 }
 export type {DashboardCardProps, CardSubItemProps}

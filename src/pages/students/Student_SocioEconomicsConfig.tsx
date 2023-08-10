@@ -4,7 +4,7 @@ import { Title, WithPadding } from "../../components";
 function StudentsSocioEconomics(): React.ReactElement {
   return (
     <WithPadding>
-      <Title label="Students - SocioEconomics" />
+      <Title label="Students - Socio-economics" />
     </WithPadding>
   );
 }
