@@ -1,8 +1,7 @@
 import { Navigate } from "react-router-dom";
 import React from "react";
 import { SideBarLayout, SimpleLayout } from "../../layout"
-import { Cards, ButtonsPage, Home, Modal, Titles, TagAlerts} from "../../pages";
-import TableComponent from "../../pages/table/Table";
+import { AppsConfiguration, AppsInstallation, StaffAttendance, StaffEnrollment, StaffProgram, StudentsAttendance, StudentsEnrollment, StudentsPerformance, StudentsProgram, StudentsSocioEconomics } from "../../pages";
 
 export default function RouteList() {
     return [
@@ -14,52 +13,52 @@ export default function RouteList() {
         {
             path: "/student/program",
             layout: SideBarLayout,
-            component: Home
+            component: StudentsProgram
         },
         {
             path: "/student/enrollment",
             layout: SideBarLayout,
-            component: () => <TableComponent />
+            component: StudentsEnrollment
         },
         {
             path: "/student/socio-economics",
             layout: SideBarLayout,
-            component: ButtonsPage
+            component: StudentsSocioEconomics
         },
         {
             path: "/student/attendance",
             layout: SideBarLayout,
-            component: Cards
+            component: StudentsAttendance
         },
         {
             path: "/student/performance",
             layout: SideBarLayout,
-            component: Modal
+            component: StudentsPerformance
         },
         {
             path: "/staff/program",
             layout: SideBarLayout,
-            component: Titles
+            component: StaffProgram
         },
         {
             path: "/staff/enrollment",
             layout: SideBarLayout,
-            component: TagAlerts
+            component: StaffEnrollment
         },
         {
             path: "/staff/attendance",
             layout: SideBarLayout,
-            component: Cards
+            component: StaffAttendance
         },
         {
             path: "/apps/installation",
             layout: SideBarLayout,
-            component: Cards
+            component: AppsInstallation
         },
         {
             path: "/apps/configuration",
             layout: SideBarLayout,
-            component: Cards
+            component: AppsConfiguration
         }
     ]
 }
