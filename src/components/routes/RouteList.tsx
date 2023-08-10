@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import React from "react";
 import { SideBarLayout, SimpleLayout } from "../../layout"
-import { AppsConfiguration, AppsInstallation, StaffAttendance, StaffEnrollment, StaffProgram, StudentsAttendance, StudentsEnrollment, StudentsPerformance, StudentsProgram, StudentsSocioEconomics } from "../../pages";
+import { AppsConfiguration, AppsInstallation, GenericForm, StaffAttendance, StaffEnrollment, StaffProgram, StudentsAttendance, StudentsEnrollment, StudentsPerformance, StudentsProgram, StudentsSocioEconomics } from "../../pages";
 
 export default function RouteList() {
     return [
@@ -59,6 +59,11 @@ export default function RouteList() {
             path: "/apps/configuration",
             layout: SideBarLayout,
             component: AppsConfiguration
+        },
+        {
+            path: "/form",
+            layout: SideBarLayout,
+            component: GenericForm
         }
     ]
 }
