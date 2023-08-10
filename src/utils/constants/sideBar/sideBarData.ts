@@ -35,6 +35,12 @@ function sideBarData (): SideBarItemProps[] {
                     route: "/table"
                 },
                 {
+                    icon: listAdd,
+                    label: "Form",
+                    showBadge: false,
+                    route: "/form"
+                },
+                {
                     icon: fileDocument,
                     label: "Tags",
                     showBadge: false,
