@@ -15,31 +15,31 @@ function sideBarData(): SideBarItemProps[] {
                     icon: settings,
                     label: "Program",
                     showBadge: false,
-                    route: "/home4"
+                    route: "/student/program"
                 },
                 {
                     icon: listAdd,
                     label: "Enrollment",
                     showBadge: false,
-                    route: "/enrollment"
+                    route: "/student/enrollment"
                 },
                 {
                     icon: fileDocument,
                     label: "Socio - economics",
                     showBadge: false,
-                    route: "/home3"
+                    route: "/student/socio-economics"
                 },
                 {
                     icon: glyph,
                     label: "Attendance",
                     showBadge: false,
-                    route: "/home1"
+                    route: "/student/attendance"
                 },
                 {
                     icon: gauge,
                     label: "Performance",
                     showBadge: false,
-                    route: "/home2"
+                    route: "/student/performance"
                 }
             ]
         },
@@ -50,19 +50,19 @@ function sideBarData(): SideBarItemProps[] {
                     icon: settings,
                     label: "Program",
                     showBadge: false,
-                    route: "/home4"
+                    route: "/staff/program"
                 },
                 {
                     icon: listAdd,
                     label: "Enrollment",
                     showBadge: false,
-                    route: "/enrollment"
+                    route: "/staff/enrollment"
                 },
                 {
                     icon: glyph,
                     label: "Attendance",
                     showBadge: false,
-                    route: "/home7"
+                    route: "/staff/attendance"
                 }
             ]
         },
@@ -73,13 +73,13 @@ function sideBarData(): SideBarItemProps[] {
                     icon: appsLoggOut,
                     label: "Apps Instalation",
                     showBadge: false,
-                    route: "/home4"
+                    route: "/apps/installation"
                 },
                 {
                     icon: appsLoggOut,
                     label: "Modules Configuration",
                     showBadge: false,
-                    route: "/home4"
+                    route: "/apps/configuration"
                 }
             ]
         }

@@ -9,42 +9,57 @@ export default function RouteList() {
         {
             path: "/",
             layout: SimpleLayout,
-            component: () => <Navigate to="/cards" replace />
+            component: () => <Navigate to="/student/program" replace />
         },
         {
-            path: "/home",
+            path: "/student/program",
             layout: SideBarLayout,
             component: Home
         },
         {
-            path: "/table",
+            path: "/student/enrollment",
             layout: SideBarLayout,
             component: () => <TableComponent />
         },
         {
-            path: "/buttons",
+            path: "/student/socio-economics",
             layout: SideBarLayout,
             component: ButtonsPage
         },
         {
-            path: "/cards",
+            path: "/student/attendance",
             layout: SideBarLayout,
             component: Cards
         },
         {
-            path: "/modal",
+            path: "/student/performance",
             layout: SideBarLayout,
             component: Modal
         },
         {
-            path: "/text",
+            path: "/staff/program",
             layout: SideBarLayout,
             component: Titles
         },
         {
-            path: "/tags",
+            path: "/staff/enrollment",
             layout: SideBarLayout,
             component: TagAlerts
+        },
+        {
+            path: "/staff/attendance",
+            layout: SideBarLayout,
+            component: Cards
+        },
+        {
+            path: "/apps/installation",
+            layout: SideBarLayout,
+            component: Cards
+        },
+        {
+            path: "/apps/configuration",
+            layout: SideBarLayout,
+            component: Cards
         }
     ]
 }
