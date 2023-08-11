@@ -9,6 +9,21 @@ import { type SideBarItemProps } from "../../../types/sideBar/SideBarTypes"
 function sideBarData(): SideBarItemProps[] {
     return [
         {
+            title: "Overview",
+            subItems: [
+                {
+                    icon: appsLoggOut,
+                    label: "Modules Configuration",
+                    showBadge: false,
+                    route: "/apps/configuration"
+                }, {
+                    icon: appsLoggOut,
+                    label: "Apps Instalation",
+                    showBadge: false,
+                    route: "/apps/installation"
+                }
+            ]
+        },{
             title: "Students",
             subItems: [
                 {
@@ -63,23 +78,6 @@ function sideBarData(): SideBarItemProps[] {
                     label: "Attendance",
                     showBadge: false,
                     route: "/staff/attendance"
-                }
-            ]
-        },
-        {
-            title: "Overview",
-            subItems: [
-                {
-                    icon: appsLoggOut,
-                    label: "Apps Instalation",
-                    showBadge: false,
-                    route: "/apps/installation"
-                },
-                {
-                    icon: appsLoggOut,
-                    label: "Modules Configuration",
-                    showBadge: false,
-                    route: "/apps/configuration"
                 }
             ]
         }
