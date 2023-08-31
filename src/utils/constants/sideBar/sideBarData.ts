@@ -13,15 +13,14 @@ function sideBarData(): SideBarItemProps[] {
             subItems: [
                 {
                     icon: appsLoggOut,
-                    label: "Apps Instalation",
-                    showBadge: false,
-                    route: "/apps/installation"
-                },
-                {
-                    icon: appsLoggOut,
                     label: "Modules Configuration",
                     showBadge: false,
                     route: "/apps/configuration"
+                }, {
+                    icon: appsLoggOut,
+                    label: "Apps Instalation",
+                    showBadge: false,
+                    route: "/apps/installation"
                 }
             ]
         },
