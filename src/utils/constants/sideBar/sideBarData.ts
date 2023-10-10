@@ -27,21 +27,21 @@ function sideBarData (): SideBarItemProps[] {
                     appName: "SEMIS-Attendance",
                     route: "attendance?sectionType=student&academicYear=2023"
                 },
-                {
+/*                 {
                     icon: fileDocument,
                     label: "Performance",
                     showBadge: false,
                     disabled: false,
                     appName: "SEMIS-Performance",
                     route: "performance?sectionType=student&academicYear=2023"
-                },
+                }, */
                 {
                     icon: gauge,
                     label: "Final result",
                     showBadge: false,
                     disabled: false,
                     appName: "SEMIS-Final-Result",
-                    route: "enrollment?sectionType=student"
+                    route: "final-result?sectionType=student"
                 },
                 {
                     icon: logOut,

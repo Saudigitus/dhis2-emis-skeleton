@@ -30,7 +30,7 @@ function cardsData(): DashboardCardProps[] {
           listLink: "attendance?sectionType=student&academicYear=2023",
           disabled: false
         },
-        {
+/*         {
           icon: performance,
           title: "Performance",
           program: "programId",
@@ -39,7 +39,7 @@ function cardsData(): DashboardCardProps[] {
           formLink: "form-performance",
           listLink: "performance?sectionType=student&academicYear=2023",
           disabled: false
-        },
+        }, */
         {
           icon: result,
           title: "Final result",
