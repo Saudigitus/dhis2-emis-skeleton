@@ -47,7 +47,7 @@ function cardsData(): DashboardCardProps[] {
           leftLabel: "Pending",
           appName: "SEMIS-Final-Result",
           formLink: "form-final-result",
-          listLink: "final-result?sectionType=student",
+          listLink: "final-result?sectionType=student&academicYear=2023",
           disabled: false
         },
         {
@@ -92,7 +92,7 @@ function cardsData(): DashboardCardProps[] {
           leftLabel: "Total",
           appName: "SEMIS-Staff-Transfer",
           formLink: "form-staff-transfer",
-          listLink: "staff-transfer?sectionType=staff&academicYear=2023",
+          listLink: "staff-transfer?sectionType=staff",
           disabled: false
         }
       ]
