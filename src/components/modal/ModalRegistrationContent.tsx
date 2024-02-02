@@ -6,7 +6,7 @@ import { Col, Row } from "react-bootstrap";
 import { formFields } from "../../utils/constants/fields/fieldsAttributes";
 import Subtitle from "../text/subtitle";
 
-function ModalContentComponent(): React.ReactElement {
+function ModalRegistrationContent(): React.ReactElement {
   return (
     <>
       {formFields().map((ff: any, i: number) => (
@@ -34,4 +34,4 @@ function ModalContentComponent(): React.ReactElement {
   );
 }
 
-export default ModalContentComponent;
+export default ModalRegistrationContent;
