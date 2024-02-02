@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./card.module.css";
 
 interface CardProps {
-  value: string
+  value: number
   label: string
   color: string
 }

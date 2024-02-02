@@ -7,7 +7,7 @@ interface TitleProps {
 function Title(props: TitleProps): React.ReactElement {
   const { label } = props;
 
-  return <label className={styles.title}>{label}</label>;
+  return <h6 className={styles.title}>{label}</h6>;
 }
 
 export default Title;

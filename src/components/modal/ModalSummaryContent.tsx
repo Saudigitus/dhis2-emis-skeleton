@@ -1,36 +1,84 @@
-import React from "react";
-import { Divider, Box, Label, InputField } from "@dhis2/ui";
+import React, { useState } from "react";
+import { Divider, IconCheckmarkCircle16, IconInfo16, Tag, ModalActions, Button, ButtonStrip } from "@dhis2/ui";
 import WithPadding from "../template/WithPadding";
 import styles from "./modal.module.css";
-import { Col, Row } from "react-bootstrap";
-import { formFields } from "../../utils/constants/fields/fieldsAttributes";
-import Subtitle from "../text/subtitle";
+import { ButtonActionProps } from "../../types/buttons/ButtonActions";
+import Title from "../text/Title";
+import SummaryCards from "./SummaryCards";
+import { Collapse } from "@material-ui/core";
+import { InfoOutlined } from "@material-ui/icons";
 
-function ModalSummaryContent(): React.ReactElement {
+interface ModalContentProps {
+  setOpen: (value: boolean) => void
+  summaryData: any
+}
+function ModalSummaryContent(props: ModalContentProps): React.ReactElement {
+  const { setOpen, summaryData } = props;
+  const [showDetails, setShowDetails] = useState(false)
+  const handleShowDetails =()=> {
+    setShowDetails(!showDetails);
+  }
+
+  const modalActions: ButtonActionProps[] = [
+    { label: "Cancel", disabled: false, onClick: () => { setOpen(false) } },
+    { label: "Confirm", primary: true, disabled: false, onClick: () => { setOpen(false) } }
+  ];
+
   return (
-    <>
-      {formFields().map((ff: any, i: number) => (
-        <WithPadding key={i}>
-          <Subtitle label={ff.section}/>
-          <WithPadding />
-          <Label>{ff.description}</Label>
-          <WithPadding p="0.2rem" />
-          <Box width="100%">
-            {ff.fields.map((field: any, f: number) => (
-              <Row className={styles.formSection} key={f}>
-                <Col sm={5}>
-                  <Label>{field.label}</Label>
-                </Col>
-                <Col sm={7}>
-                  <InputField disabled={field.disabled} name={field.attribute} placeholder={field.label} />
-                </Col>
-              </Row>
-            ))}
-            <Divider />
-          </Box>
-        </WithPadding>
-      ))}
-    </>
+    <div>
+      <Tag positive icon={<IconCheckmarkCircle16 />} className={styles.tagContainer}> Students import preview </Tag>
+      
+      <WithPadding />
+      <Title label="Summary" />
+      <WithPadding />
+
+      <SummaryCards {...summaryData} />
+
+      <WithPadding />
+      <WithPadding />
+      <ButtonStrip>
+        <Button small icon={<InfoOutlined className={styles.infoIcon} />} onClick={handleShowDetails}>More details</Button>
+      </ButtonStrip>
+      
+      <WithPadding />
+      <Collapse in={showDetails}>
+        <div className={styles.detailsContainer}>
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+          Display here summary details <br />
+
+        </div>
+      </Collapse>
+      
+      <Divider />
+      <ModalActions>
+        <ButtonStrip end>
+          {modalActions.map((action, i) => (
+            <Button
+              key={i}
+              {...action}
+            >
+              {action.label}
+            </Button>
+          ))}
+        </ButtonStrip>
+      </ModalActions>
+    </div>
   );
 }
 

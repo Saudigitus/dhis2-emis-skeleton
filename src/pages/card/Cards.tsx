@@ -27,9 +27,11 @@ function Cards(): React.ReactElement {
       <WithPadding p="30px 15px">
         <Title label="Summary Cards" />
         <div className="d-flex">
-          <SummaryCard value="2" label="Imported" color="success" />
-          <SummaryCard value="1" label="Error" color="error" />
-          <SummaryCard value="0" label="Ignored" color="secondary" />
+          <SummaryCard value={347} label="Success" color="success" />
+          <SummaryCard value={347} label="Error" color="error" />
+          <SummaryCard value={347} label="Primary" color="primary" />
+          <SummaryCard value={347} label="Warning" color="warning" />
+          <SummaryCard value={347} label="Default" color="default" />
         </div>
       </WithPadding>
     </div>
