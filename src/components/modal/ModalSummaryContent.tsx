@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Divider, IconCheckmarkCircle16, IconInfo16, Tag, ModalActions, Button, ButtonStrip } from "@dhis2/ui";
+import { Divider, IconCheckmarkCircle16, Tag, ModalActions, Button, ButtonStrip } from "@dhis2/ui";
 import WithPadding from "../template/WithPadding";
 import styles from "./modal.module.css";
 import { ButtonActionProps } from "../../types/buttons/ButtonActions";
@@ -14,14 +14,15 @@ interface ModalContentProps {
 }
 function ModalSummaryContent(props: ModalContentProps): React.ReactElement {
   const { setOpen, summaryData } = props;
+  
   const [showDetails, setShowDetails] = useState(false)
   const handleShowDetails =()=> {
     setShowDetails(!showDetails);
   }
 
   const modalActions: ButtonActionProps[] = [
-    { label: "Cancel", disabled: false, onClick: () => { setOpen(false) } },
-    { label: "Confirm", primary: true, disabled: false, onClick: () => { setOpen(false) } }
+    { label: "Cancel", disabled: false, loading: false, onClick: () => { setOpen(false) } },
+    { label: "Confirm", primary: true, loading: false, disabled: false, onClick: () => { setOpen(false) } }
   ];
 
   return (
