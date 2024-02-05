@@ -4,7 +4,7 @@ import { Chip, IconUserGroup16, IconAddCircle24, Button, ButtonStrip } from "@dh
 import DropdownButtonComponent from '../../../../buttons/DropdownButton';
 import { enrollmentOptions } from '../../../../buttons/options';
 import ModalComponent from '../../../../modal/Modal';
-import ModalContentComponent from '../../../../modal/ModalContent';
+import ModalContentComponent from '../../../../modal/ModalRegistrationContent';
 import { type ButtonActionProps } from '../../../../../types/buttons/ButtonActions';
 
 function WorkingLits() {

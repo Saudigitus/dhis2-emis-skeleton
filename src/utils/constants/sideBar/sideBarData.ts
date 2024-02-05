@@ -23,12 +23,6 @@ function sideBarData (): SideBarItemProps[] {
                     route: "/buttons"
                 },
                 {
-                    icon: gauge,
-                    label: "Modal",
-                    showBadge: false,
-                    route: "/modal"
-                },
-                {
                     icon: logOut,
                     label: "Table",
                     showBadge: false,
@@ -51,6 +45,23 @@ function sideBarData (): SideBarItemProps[] {
                     label: "Titles",
                     showBadge: false,
                     route: "/text"
+                }
+            ]
+        },
+        {
+            title: "Modal",
+            subItems: [
+                {
+                    icon: gauge,
+                    label: "Registration",
+                    showBadge: false,
+                    route: "/modal-registration"
+                },
+                {
+                    icon: glyph,
+                    label: "Summary",
+                    showBadge: false,
+                    route: "/modal-summary"
                 }
             ]
         }

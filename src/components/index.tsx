@@ -9,7 +9,8 @@ import FlyoutMenuComponent from "./menu/FlyoutMenu";
 import WithPadding from "./template/WithPadding";
 import WithBorder from "./template/WithBorder";
 import ModalComponent from "./modal/Modal";
-import ModalContentComponent from "./modal/ModalContent";
+import ModalRegistrationContent from "./modal/ModalRegistrationContent";
+import ModalSummaryContent from "./modal/ModalSummaryContent";
 import Title from "./text/Title";
 import Subtitle from "./text/subtitle";
 import SummaryCard from "./card/SummaryCard";
@@ -20,4 +21,4 @@ import ButtonsGroup from "./buttons/GroupedButtons/ButtonGroup";
 import TagAlert from "./alerts/EmbeddedAlert";
 import GroupForm from "./form/GroupForm";
 
-export { SideBar, MainHeader, DashboardCard, Table, SplitButtonComponent, FlyoutMenuComponent, Buttons, WithPadding, WithBorder, ModalComponent, ModalContentComponent, OrgUnitTree, SimpleSearch, Title, Subtitle, SummaryCard, SimpleButton, SimpleDropdownButton, SwitchButtonView, ButtonsGroup, TagAlert, GroupForm }
+export { SideBar, MainHeader, DashboardCard, Table, SplitButtonComponent, FlyoutMenuComponent, Buttons, WithPadding, WithBorder, ModalComponent, ModalRegistrationContent, ModalSummaryContent, OrgUnitTree, SimpleSearch, Title, Subtitle, SummaryCard, SimpleButton, SimpleDropdownButton, SwitchButtonView, ButtonsGroup, TagAlert, GroupForm }

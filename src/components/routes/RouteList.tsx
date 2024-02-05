@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import React from "react";
 import { SideBarLayout, SimpleLayout, FullLayout } from "../../layout"
-import { Cards, ButtonsPage, Home, Modal, Titles, TagAlerts, GenericForm} from "../../pages";
+import { Cards, ButtonsPage, Home, RegistrationModal, SummaryModal, Titles, TagAlerts, GenericForm} from "../../pages";
 import TableComponent from "../../pages/table/Table";
 
 export default function RouteList() {
@@ -32,9 +32,14 @@ export default function RouteList() {
             component: Cards
         },
         {
-            path: "/modal",
+            path: "/modal-registration",
             layout: SideBarLayout,
-            component: Modal
+            component: RegistrationModal
+        },
+        {
+            path: "/modal-summary",
+            layout: SideBarLayout,
+            component: SummaryModal
         },
         {
             path: "/text",
